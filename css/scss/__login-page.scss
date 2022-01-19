@@ -1,0 +1,222 @@
+.login-page {
+  height: 100vh;
+
+  & .eagle__element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primary_color;
+    height: 100%;
+    padding: 100px 130px 137px 100px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 33px;
+      right: 33px;
+      width: calc(100% - 33px);
+      height: calc(100% - 66px);
+      // background: red;
+      border: 2px solid $second_color;
+      border-left: none;
+    }
+  }
+
+  & .login__card {
+    background: $second_color;
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $second_color;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 33px;
+        left: 33px;
+        width: calc(100% - 33px);
+        height: calc(100% - 66px);
+        border: 2px solid $primary_color;
+      }
+    }
+    background: none;
+    &.card {
+      background: white;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+      border: none;
+      & .card {
+        &-header {
+          background: none;
+          background: white;
+          border-top-left-radius: 30px;
+          border-top-right-radius: 30px;
+          padding-top: 80px;
+          font-family: "Roboto";
+          font-weight: bold;
+          font-size: 20px;
+          text-align: center;
+          color: #164493;
+          border-bottom: none;
+          &-icon {
+            position: absolute;
+            top: -56px;
+            left: 50%;
+            width: 113px;
+            height: 113px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background: $primary_color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+          }
+        }
+        &-body {
+          background: none;
+          padding-top: 0;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-bottom: 30px;
+
+          & .form-group {
+            margin-bottom: 31px;
+            & label {
+              font-family: "Roboto";
+              font-weight: normal;
+              font-size: 12px;
+              letter-spacing: 0.02em;
+              line-height: 30px;
+              text-align: center;
+              color: #303030;
+              display: flex;
+              justify-content: space-between;
+
+              & a {
+                font-family: "Roboto";
+                font-weight: normal;
+                font-size: 12px;
+                letter-spacing: 0.02em;
+                line-height: 30px;
+                text-align: right;
+                color: #164493;
+                text-decoration: none;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          & .form-control {
+            height: 50px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border: 1px solid $primary_color;
+          }
+        }
+        &-footer {
+          background: none;
+          border-top: none;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-bottom: 30px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+    }
+  }
+
+  &.login__choose {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // padding: 20px 30px 24px 20px;
+    & .logo {
+      text-align: center;
+      margin-bottom: 40px;
+      & .name {
+      }
+      &__title {
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        color: #164493;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+      }
+    }
+    & .card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px 30px 20px 20px;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+      border: none;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      & .icon {
+        width: 113px;
+        height: 113px;
+        flex: 0 0 113px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $primary_color;
+        margin-right: 20px;
+      }
+      & .name {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 20px;
+        text-align: left;
+        color: #164493;
+        text-transform: uppercase;
+        & b {
+          font-weight: 700;
+        }
+      }
+      & .btn {
+        padding: 14px 42px;
+        border-radius: 25rem;
+        -webkit-border-radius: 25rem;
+        -moz-border-radius: 25rem;
+        -ms-border-radius: 25rem;
+        -o-border-radius: 25rem;
+        margin-left: auto;
+        background: $primary_color;
+      }
+    }
+  }
+}

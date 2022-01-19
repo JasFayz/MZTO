@@ -1,0 +1,62 @@
+@import "_colors";
+
+@import "_login-page";
+
+@import "_dashboard";
+
+.form-check {
+  display: inline-flex;
+  margin-bottom: 33px;
+  &-label {
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #494a4e;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $primary_color;
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 8px);
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+    }
+    &::after {
+      content: none;
+      display: block;
+      width: 14px;
+      height: 6px;
+      border-left: 2px solid $primary_color;
+      border-bottom: 2px solid $primary_color;
+      position: absolute;
+      top: 7px;
+      right: calc(100% + 10px);
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+    }
+  }
+  &-input {
+    display: none;
+    &:checked + label::after {
+      content: "";
+    }
+  }
+}
