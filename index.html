@@ -146,7 +146,7 @@
                       >2</span
                     >
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
                       <a class="dropdown-item" href="#">Another action</a>
@@ -1061,7 +1061,7 @@
       var myModal = new bootstrap.Modal(
         document.getElementById("profileModal")
       );
-      let tr = document.querySelectorAll(".table tr");
+      let tr = document.querySelectorAll(".table td");
       tr.forEach(function (el, index) {
         el.addEventListener("click", function () {
           myModal.show();

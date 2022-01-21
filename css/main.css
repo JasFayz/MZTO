@@ -1,4 +1,53 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"), local("Roboto"), url("/fonts/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"), local("Roboto"), url("/fonts/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"), local("Roboto"), url("/fonts/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"), local("Roboto"), url("/fonts/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"), local("Roboto"), url("/fonts/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: local("Roboto Condensed"), local("Roboto Condensed"), url("/fonts/RobotoCondensed-Regular.woff") format("woff"), url("./fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: local("Roboto Condensed"), local("Roboto Condensed"), url("/fonts/RobotoCondensed-Bold.woff") format("woff"), url("./fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .login-page {
   height: 100vh;
 }
@@ -303,6 +352,12 @@
           box-shadow: 0px 3px 6px #00000029;
   position: relative;
   z-index: 2;
+  padding-right: 25px;
+}
+
+.dashboard .header .container-fluid {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .dashboard .navbar-brand {
@@ -524,7 +579,7 @@
   padding-top: 30px;
   padding-left: 37px;
   padding-right: 43px;
-  width: 100%;
+  width: calc(100% - 100px);
 }
 
 .dashboard .content__header {

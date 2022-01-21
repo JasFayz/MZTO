@@ -6,6 +6,10 @@
     box-shadow: 0px 3px 6px #00000029;
     position: relative;
     z-index: 2;
+    padding-right: 25px;
+    & .container-fluid {
+      flex-wrap: wrap;
+    }
   }
   & .navbar-brand {
     margin-right: 58px;
@@ -155,7 +159,7 @@
     padding-top: 30px;
     padding-left: 37px;
     padding-right: 43px;
-    width: 100%;
+    width: calc(100% - 100px);
     &__header {
       display: flex;
       justify-content: space-between;
@@ -185,6 +189,7 @@
     & .table2 {
       border-collapse: separate;
       border-spacing: 0 10px;
+
       & input.form-control {
         height: 40px;
         border-radius: 5px;

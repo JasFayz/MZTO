@@ -1,10 +1,39 @@
 /* === DESKTOP FIRST === */
 /* xl <= Extra extra large (xxl) */
+@media (max-width: 1400px) {
+  .dashboard .content .table2 {
+    table-layout: fixed;
+  }
+}
+
 /* lg <= Extra large (xl) */
 /* md <= Large (lg) */
 @media (max-width: 992px) {
   .login-page .login__card__wrapper::before {
     width: calc(100% - 66px);
+  }
+  .header .navbar-nav {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .dashboard .profile-dropdown {
+    margin-right: 0;
+  }
+  .dashboard .message-dropdown {
+    margin-right: 10px;
+  }
+  .dashboard .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .header form {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .dashboard .navbar-brand {
+    margin-right: 0;
   }
 }
 

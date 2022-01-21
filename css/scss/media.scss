@@ -2,10 +2,14 @@
 
 /* xl <= Extra extra large (xxl) */
 @media (max-width: 1400px) {
+  .dashboard .content .table2 {
+    table-layout: fixed;
+  }
 }
 
 /* lg <= Extra large (xl) */
 @media (max-width: 1200px) {
+  
 }
 
 /* md <= Large (lg) */
@@ -13,6 +17,26 @@
   .login-page .login__card__wrapper::before {
     width: calc(100% - 66px);
   }
+  .header .navbar-nav {
+    align-items: flex-end;
+  }
+  .dashboard .profile-dropdown {
+    margin-right: 0;
+  }
+  .dashboard .message-dropdown {
+    margin-right: 10px;
+  }
+  .dashboard .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .header form {
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .dashboard .navbar-brand {
+    margin-right: 0;
+  }
+ 
 }
 
 /* sm <= Medium (md) */
